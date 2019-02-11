@@ -23,6 +23,7 @@ twitter_username: edwardandrews
 github_username: aldreth
 
 # Build settings
+permalink: /:title
 markdown: kramdown
 theme: minima
 plugins:

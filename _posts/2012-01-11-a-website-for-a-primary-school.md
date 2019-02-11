@@ -23,4 +23,9 @@ comments: []
 <p>There is also an art gallery and a calendar for the school.  The different parts of the site were put together using drupal modules - <a href="http://drupal.org/project/views">views</a>; <a href="http://drupal.org/project/date">date</a> &amp; <a href="http://drupal.org/project/calendar">calendar</a>; <a href="http://drupal.org/project/simplenews">simplenews</a>; <a href="http://drupal.org/project/lightbox">lightbox</a>; <a href="http://drupal.org/project/webform">webform</a> and several more.  Drupal is very adaptable and has loads of modules to extend its functionality.</p>
 <p>I chose a theme that was suitable for a primary school - bright, colourful and clear.  It has a rotating image in the top bar to show off pictures children had created.</p>
 <p>I got a distinction for this module.</p>
-<p>[gallery link="file"]</p>
+
+[![Primary school website - Homepage ](/assets/primary/sbps-300x221.png)](/assets/primary/sbps.png)
+[![Primary school website - Contact us ](/assets/primary/sbps_contact-300x221.png)](/assets/primary/sbps_contact.png)
+[![Primary school website - Staff ](/assets/primary/sbps_staff-300x221.png)](/assets/primary/sbps_staff.png)
+[![Primary school website - Blog ](/assets/primary/sbps_blog-300x221.png)](/assets/primary/sbps_blog.png)
+[![Primary school website - Gallery ](/assets/primary/sbps_gallery-300x221.png)](/assets/primary/sbps_gallery.png)

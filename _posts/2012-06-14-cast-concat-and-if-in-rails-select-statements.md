@@ -24,16 +24,20 @@ comments: []
 
 ```ruby
 gateways = Article.joins("LEFT OUTER JOIN front_page_time_based_articles ON front_page_time_based_articles.article_id = articles.id")
-            .where("type = 'Gateway'
-                    AND articles.updated_at > :date", date: date)
-            .select("articles.created_at,
-                      articles.updated_at,
-                      body AS gatewayDescription,
-                      CONCAT('/images/', SUBSTRING(image, 15)) AS gatewayAppImage,
-                      CAST(old_id AS CHAR) AS gatewayID,
-                      '1' AS visible,
-                      '' AS gatewayCode,
-                      name AS gatewayName,
-                      IF(front_page_time_based_articles.link_title IS NOT NULL, front_page_time_based_articles.link_title, '') AS minitipTitle,
-                      IF(front_page_time_based_articles.link_text IS NOT NULL, front_page_time_based_articles.link_text, '') AS minitipDesc")
+            .where(
+              "type = 'Gateway'
+              AND articles.updated_at > :date", date: date
+            )
+            .select(
+              "articles.created_at,
+              articles.updated_at,
+              body AS gatewayDescription,
+              CONCAT('/images/', SUBSTRING(image, 15)) AS gatewayAppImage,
+              CAST(old_id AS CHAR) AS gatewayID,
+              '1' AS visible,
+              '' AS gatewayCode,
+              name AS gatewayName,
+              IF(front_page_time_based_articles.link_title IS NOT NULL, front_page_time_based_articles.link_title, '') AS minitipTitle,
+              IF(front_page_time_based_articles.link_text IS NOT NULL, front_page_time_based_articles.link_text, '') AS minitipDesc"
+            )
 ```
